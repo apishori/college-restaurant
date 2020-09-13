@@ -1,0 +1,13 @@
+{% extends "users/base.html" %}
+{% block content %}
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="container-flex2">
+                <h2>Register Here!</h2>
+                {{ form }}
+                <button class="primary-btn" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

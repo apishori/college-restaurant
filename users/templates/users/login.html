@@ -1,9 +1,13 @@
 {% extends "users/base.html" %}
 {% block content %}
-    <div>
+    <div class="container">
         <form method="POST">
             {% csrf_token %}
-            {{ form }}
+            <div class="container-flex2">
+                <h2>Log In</h2>
+                {{ form }}
+                <button class="primary-btn" type="submit">Login</button>
+            </div>
         </form>
     </div>
 {% endblock content %}

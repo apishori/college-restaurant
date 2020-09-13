@@ -1,4 +1,11 @@
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+:root {
+    --primary-color: #49AD17;
+    --secondary-color: #191C21;
+    --teriary-color: #6A6A6A;
+    --font-color: white;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -7,13 +14,25 @@ html {
     box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(247, 248, 249, 0.75);
+    background-color: var(--secondary-color);
     height: 100vh;
     overflow-anchor: none;
+    color: var(--font-color);
 }
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
 img {
     display: block;
 }
@@ -21,6 +40,27 @@ img {
 ul {
     padding: 0;
     list-style: none;
+}
+
+nav {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.main {
+    height: calc(100vh - 60px);
+}
+
+.container {
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--teriary-color);
+    padding: 1em 2em;
 }
 
 .container-flex {
@@ -38,4 +78,57 @@ ul {
 
 .container-space-between {
     justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    height: 60px;
+    padding: 1em;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.header a {
+    margin: 0 1em;
+}
+
+/* Sidebar */
+.sidebar {
+    height: calc(100vh - 60px);
+    width: 20%;
+    background-color: var(--teriary-color);
+    padding: 2em;
+}
+
+/* Form */
+form input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+form h2 {
+    margin: 0 auto 0.5em;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5em;
+}
+
+.primary-btn:hover {
+    opacity: 0.8;
 }
