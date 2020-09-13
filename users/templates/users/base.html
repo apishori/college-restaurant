@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../static/users/style.css">
+
+        <title>College Restaurant</title>
+    </head>
+    <body>
+        <header class="">
+            <nav class="">
+                <a class="" href="{% url 'home' %}">College Restaurant</a>
+                <div class="">
+                    <a class="" href="{% url 'home' %}">Home</a>
+                    <a class="" href="{% url 'about' %}">About</a>
+                </div>
+                <div class="">
+                    <a class="" href="#">Login</a>
+                    <a class="" href="#">Register</a>
+                </div>
+            </nav>
+        </header>
+        <main class="">
+            <aside>
+                <h3>Important Info</h3>
+                <ul class="">
+                    <li class="">Latest Posts</li>
+                    <li class="">Announcements</li>
+                    <li class="">Calendars</li>
+                    <li class="">etc</li>
+                </ul>
+            </aside>
+            <div class="">
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </body>
+</html>
