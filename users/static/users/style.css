@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@100;200;400&display=swap');
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 :root {
-    --primary-color: #49AD17;
+    --primary-color: #906CCF; /* #49AD17;*/ 
     --secondary-color: #191C21;
     --teriary-color: #6A6A6A;
     --font-color: white;
@@ -19,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
@@ -52,19 +55,31 @@ button:hover {
     cursor: pointer;
 }
 
+form {
+    margin: 2em;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
 .main {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 100px);
 }
 
 .container {
     margin: auto;
     border-radius: 5px;
     background-color: var(--teriary-color);
-    padding: 1em 2em;
 }
 
 .container-flex {
     display: flex;
+    align-items: center;
 }
 
 .container-flex2 {
@@ -87,7 +102,22 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Header */
+.logo {
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    margin-right: 0.5em;
+    
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 200;
+    color: #14327D;
+    text-decoration: underline;
+}
+
+/* Header & Footer */
 .header {
     background-color: var(--primary-color);
     height: 60px;
@@ -100,6 +130,12 @@ button:hover {
 
 .header a {
     margin: 0 1em;
+}
+
+.footer {
+    background-color: var(--teriary-color);
+    height: 40px;
+    padding: 1em;
 }
 
 /* Sidebar */
@@ -119,7 +155,7 @@ form input {
 }
 
 form h2 {
-    margin: 0 auto 0.5em;
+    margin: 0.5em auto;
 }
 
 .primary-btn {
@@ -131,4 +167,12 @@ form h2 {
 
 .primary-btn:hover {
     opacity: 0.8;
+}
+
+/* Login */
+
+.login-image {
+    object-fit: cover;
+    width: 700px;
+    border-radius: 5px;
 }
