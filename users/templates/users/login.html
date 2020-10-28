@@ -1,12 +1,12 @@
 {% extends "users/base.html" %}
+{% load static %}
 {% block content %}
-    {% load static %}
     <div class="container container-flex">
-        <img class="login-image" src="{% static 'users/sandwich.jpg' %}" alt="login">
+        <img class="main-image" src="{% static 'users/sandwich2.jpg' %}" alt="login">
         <form method="POST">
             {% csrf_token %}
             <div class="container-flex2">
-                <h2>Log In</h2>
+                <h2> Admin Log In</h2>
                 {{ form }}
                 <button class="primary-btn" type="submit">Login</button>
             </div>

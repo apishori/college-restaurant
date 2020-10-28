@@ -6,3 +6,9 @@ def home(request):
 
 def about(request):
     return render(request, 'orders/about.html')
+
+def order(request):
+    return render(request, 'orders/order.html')
+
+def menu(request):
+    return render(request, 'orders/menu.html')

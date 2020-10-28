@@ -1,10 +1,18 @@
 {% extends "users/base.html" %}
+{% load static %}
 {% block content %}
-    <aside class="sidebar">
-                    
-    </aside>
-
-    <main class="">
-        
+    <main class="container-flex m-auto">
+        <a href="{% url 'order' %}">
+            <div class="home-button grow">
+                <img class="main-image" src="{% static 'users/sandwich.jpg' %}" alt="login">
+                <h2>Order Now!</h2>
+            </div>
+        </a>
+        <a href="{% url 'menu' %}">
+            <div class="home-button grow">
+                <img class="main-image" src="{% static 'users/menu_cover.jpg' %}" alt="login">
+                <h2>Check out the Menu!</h2>
+            </div>
+        </a>
     </main>
 {% endblock content %}

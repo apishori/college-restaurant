@@ -1,8 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from phone_field import PhoneField
-
 
 class User(AbstractUser):
     username = models.CharField(max_length=15, blank=False, null=False, unique=True)
@@ -13,6 +11,3 @@ class User(AbstractUser):
     @property
     def full_name(self):
         return f'{self.first_name} {self.last_name}'
-
-class Profile(models.Model):
-    phone = PhoneField(blank=True)
