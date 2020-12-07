@@ -6,20 +6,22 @@ import menuImg from '../static/img/menu_cover.jpg';
 
 function Home() {
     return (
-        <main class="container-flex m-auto">
-        <Link to="/order">
-            <div class="home-button grow">
-                <img class="main-image" src={orderImg}/>
-                <h2>Order Now!</h2>
-            </div>
-        </Link>
-        <Link to="/menu">
-            <div class="home-button grow">
-                <img class="main-image" src={menuImg}/>
-                <h2>Check out the Menu!</h2>
-            </div>
-        </Link>
-        </main>
+        <div className="main container-flex">
+            <main class="container-flex m-auto">
+                <Link to="/order">
+                    <div className="home-button grow">
+                        <img className="main-image" src={orderImg} alt="order"/>
+                        <h2>Order Now!</h2>
+                    </div>
+                </Link>
+                <Link to="/menu">
+                    <div className="home-button grow">
+                        <img className="main-image" src={menuImg} alt="menu"/>
+                        <h2>Check out the Menu!</h2>
+                    </div>
+                </Link>
+            </main>
+        </div>
     )
 }
 

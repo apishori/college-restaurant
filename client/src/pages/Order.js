@@ -2,7 +2,7 @@ import React from 'react'
 
 function Order() {
     return (
-        <main class="container-flex m-auto">
+        <main className="main container-flex m-auto">
             Order
         </main>
     )

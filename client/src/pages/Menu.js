@@ -4,8 +4,8 @@ import menuImg from '../static/img/menu.jpg';
 
 function Menu() {
     return (
-        <main class="container-flex m-auto">
-            <img class="menu-image" src={menuImg} />
+        <main className="main container-flex m-auto">
+            <img className="menu-image" src={menuImg} alt="menu"/>
         </main>
     )
 }
