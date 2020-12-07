@@ -20,11 +20,7 @@ from users import views as user_views
 from orders import views as order_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', order_views.home, name='home'),
-    path('about/', order_views.about, name='about'),
-    path('order/', order_views.order, name='order'),
-    path('menu/', order_views.menu, name='menu'),
+    path('', admin.site.urls),
     
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
